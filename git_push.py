@@ -4,7 +4,8 @@ from git import Repo
 
 repo_path =r"C:\Users\AvuA\Downloads\clone_12"   
 repo = git.Repo(repo_path)
-current_branch = repo.active_branch
+master_branch = repo.heads.master
+
 
 # Check for any changes
 if repo.is_dirty(untracked_files=True):
