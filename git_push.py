@@ -1,6 +1,6 @@
 import git
 from git import Repo
-git_path = input("enter the git path here: ")
+git_path = "https://github.com/vishwa01234/jenkins.git"
 
 repo_path =r"C:\Users\AvuA\Downloads\clone"                                     #input("enter the local path to clone: ")
 Repo.clone_from(git_path, repo_path)
