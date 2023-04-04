@@ -4,7 +4,8 @@ from git import Repo
 
 repo_path =r"C:\Users\AvuA\Downloads\clone_12"   
 repo = git.Repo(repo_path)
-master_branch = repo.heads.master
+branch = repo.heads['my_branch']
+branch.checkout()
 
 
 # Check for any changes
@@ -17,6 +18,6 @@ if repo.is_dirty(untracked_files=True):
 
     # Push the changes to the remote repository
     origin = repo.remote(name='origin')
-    origin.push(master_branch)
+    origin.push(branch)
 else:
     print('No changes to commit')
