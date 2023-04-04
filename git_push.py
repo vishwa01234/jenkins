@@ -17,6 +17,6 @@ if repo.is_dirty(untracked_files=True):
 
     # Push the changes to the remote repository
     origin = repo.remote(name='origin')
-    origin.push(current_branch)
+    origin.push(master_branch)
 else:
     print('No changes to commit')
