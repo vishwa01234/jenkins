@@ -3,7 +3,7 @@ from git import Repo
 git_path = input("enter the git path here: ")
 
 repo_path =r"C:\Users\AvuA\Downloads\clone"                                     #input("enter the local path to clone: ")
-# Repo.clone_from(git_path, repo_path)
+Repo.clone_from(git_path, repo_path)
 # open the local repository
 repo = git.Repo(repo_path)
 current_branch = repo.active_branch
