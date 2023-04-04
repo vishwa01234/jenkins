@@ -1,9 +1,9 @@
 import git
 from git import Repo
-git_path = "https://github.com/vishwa01234/jenkins.git"
+# git_path = "https://github.com/vishwa01234/jenkins.git"
 
-repo_path =r"C:\Users\AvuA\Downloads\clone"                                     #input("enter the local path to clone: ")
-Repo.clone_from(git_path, repo_path)
+repo_path =r"C:\Users\AvuA\Downloads\clone_12"                                     #input("enter the local path to clone: ")
+# Repo.clone_from(git_path, repo_path)
 # open the local repository
 repo = git.Repo(repo_path)
 current_branch = repo.active_branch
