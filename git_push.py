@@ -2,7 +2,7 @@ import git
 from git import Repo
 
 
-repo_path =r"C:\Users\AvuA\Downloads\clone_12\backup_jen"
+repo_path =r"C:\Users\AvuA\Downloads\clone_12"
 repo = git.Repo(repo_path)
 current_branch = repo.active_branch
 # Check for any changes
